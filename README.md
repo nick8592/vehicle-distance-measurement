@@ -1,4 +1,4 @@
-# BDD100K Object Detection and Distance Measurement README
+# Vehicle Distance Measurement
 
 This repository contains a set of tools for object detection and distance measurement using the BDD100K dataset annotations. The tools are designed to extract bounding boxes, calculate the distance of objects, and detect potential collisions. The entire workflow involves converting the BDD100K annotations from JSON to a custom format, then using that data to process images, calculate distances, and visualize results.
 
