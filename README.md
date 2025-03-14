@@ -81,7 +81,7 @@ The program will:
 
 The directory structure of the project is as follows:
 ```
-vehicle-distance-detection
+vehicle-distance-measurement
 ├── bdd100k
 │   ├── custom_labels
 │   │   └── test
