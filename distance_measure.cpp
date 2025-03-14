@@ -133,7 +133,7 @@ namespace fs = std::filesystem;
 
 int main() {
     // Load the input image
-    std::string imagePath = "bdd100k/images/test/cbf2d780-06947287.jpg";  // Your original image path
+    std::string imagePath = "bdd100k/images/test/cb97debb-12f48570.jpg";  // Your original image path
     cv::Mat frame = cv::imread(imagePath);
 
     if (frame.empty()) {
@@ -149,28 +149,23 @@ int main() {
     // x: top-left x cooridinate,       y: top-left y cooridinate
     // x1: bottom-right x cooridnate,   y1: bottom-right y cooridnate
     std::vector<std::tuple<float, float, float, float, std::string, float>> boxes = {
-        {505, 344, 519, 380, "person", 0.88},
-        {522, 339, 535, 374, "person", 0.88},
-        {535, 341, 550, 375, "person", 0.88},
-        {1225, 237, 1279, 483, "person", 0.88},
-        {1055, 267, 1179, 486, "person", 0.88},
-        {824, 269, 912, 487, "person", 0.88},
-        {436, 340, 447, 350, "car", 0.88},
-        {431, 346, 440, 356, "car", 0.88},
-        {400, 343, 418, 365, "car", 0.88},
-        {384, 342, 395, 354, "car", 0.88},
-        {362, 341, 377, 346, "car", 0.88},
-        {341, 348, 359, 363, "car", 0.88},
-        {213, 344, 273, 406, "car", 0.88},
-        {44, 359, 116, 424, "car", 0.88},
-        {652, 316, 956, 434, "car", 0.88},
-        {445, 341, 459, 352, "car", 0.88},
-        {464, 342, 489, 359, "car", 0.88},
-        {249, 344, 355, 425, "car", 0.88},
-        {79, 354, 217, 435, "car", 0.88},
-        {960, 328, 978, 387, "person", 0.88},
-        {362, 343, 389, 365, "car", 0.88},
-        {1005, 301, 1278, 452, "car", 0.88},
+        {547, 142, 629, 227, "traffic sign", 1.0},
+        {740, 287, 779, 299, "traffic sign", 1.0},
+        {780, 286, 811, 297, "traffic sign", 1.0},
+        {419, 232, 507, 267, "traffic sign", 1.0},
+        {337, 235, 412, 270, "traffic sign", 1.0},
+        {217, 242, 297, 275, "traffic sign", 1.0},
+        {0, 265, 237, 398, "car", 1.0},
+        {287, 284, 402, 352, "car", 1.0},
+        {750, 301, 825, 362, "car", 1.0},
+        {830, 301, 862, 327, "car", 1.0},
+        {658, 298, 696, 326, "car", 1.0},
+        {574, 308, 611, 329, "car", 1.0},
+        {545, 307, 574, 327, "car", 1.0},
+        {630, 307, 656, 324, "car", 1.0},
+        {611, 303, 631, 322, "car", 1.0},
+        {711, 306, 735, 322, "car", 1.0},
+        {694, 307, 711, 317, "car", 1.0},
     };
 
     // Update the distances and print them to the terminal

@@ -41,7 +41,7 @@ def convert_bdd100k_to_custom(json_file, output_dir):
                 continue  # Skip if the label is not mapped
 
             # Append the formatted annotation to the list
-            custom_annotations.append("{"f'{x_min}, {y_min}, {x_max}, {y_max}, "{label}, 1.0"'"},")
+            custom_annotations.append("{"f'{x_min}, {y_min}, {x_max}, {y_max}, "{label}", 1.0'"},")
 
         # Write annotations to a .txt file
         if custom_annotations:
@@ -87,7 +87,7 @@ if __name__ == '__main__':
     }
 
     # Example usage
-    json_file = "bdd100k/labels/test/cbf2d780-06947287.json"  # Path to BDD100K JSON file
+    json_file = "bdd100k/labels/test/cb97debb-12f48570.json"  # Path to BDD100K JSON file
     output_dir = "bdd100k/custom_labels/test"  # Path to save custom annotations
 
     convert_bdd100k_to_custom(json_file, output_dir)
