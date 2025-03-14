@@ -20,6 +20,13 @@ This repository includes two main components:
 
 The two tools can work together to process the BDD100K dataset, create custom annotations, and measure the distance of detected objects in images. The custom annotation files can be used for training object detection models, while the distance measurement tool provides valuable insights into the real-world distances of detected objects.
 
+## Use Case
+
+This repository is designed for cases where you have detection results (e.g., bounding boxes) and you want to predict the distance of the detected objects without using a deep learning model. The object distance measurement is based on the size of the bounding boxes in the image and their known reference sizes. T
+
+This solution is useful when you have pre-detected objects and wish to calculate their distances using simple geometric methods, offering a lightweight alternative to more computationally expensive methods like training a deep learning model.
+
+
 ## Dependencies
 
 - **Python 3.x**: For the custom annotation converter script.
