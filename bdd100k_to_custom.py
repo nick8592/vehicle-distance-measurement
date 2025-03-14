@@ -87,7 +87,7 @@ if __name__ == '__main__':
     }
 
     # Example usage
-    json_file = "bdd100k/labels/test/cabc30fc-eb673c5a.json"  # Path to BDD100K JSON file
+    json_file = "bdd100k/labels/test/cb4614bc-47577a9a.json"  # Path to BDD100K JSON file
     output_dir = "bdd100k/custom_labels/test"  # Path to save custom annotations
 
     convert_bdd100k_to_custom(json_file, output_dir)
